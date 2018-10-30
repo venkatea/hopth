@@ -12,6 +12,7 @@ class Solution
    * ```
    */
   // record the current index of the input heading list when recursion method is happenning
+  //check code in
   private static int index = 0;
     
   public static class Heading {
@@ -45,6 +46,7 @@ class Solution
     System.out.println(html);
   }
    
+
   private static Node toOutline(List<Heading> headings) {
     // get the input list headings length
     int listLength = headings.size();
@@ -65,6 +67,7 @@ class Solution
    * @param headings a list of the input headings
    * @param listLength the length of the input headings list
    */
+
   private static void buildNode(Node root, List<Heading> headings, int listLength) {
     int rootHeadingWeight = root.heading.weight;
     // if current Heading weight <= child node heading weight then return to previous node
